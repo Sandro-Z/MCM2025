@@ -430,7 +430,7 @@ print(df_comparison[
            'Odds_First_Gold']])
 
 # ========= 8. 生成对比图 ==========
-plt.figure(figsize=(7,5))
+plt.figure(figsize=(6,5))
 
 # 定义不同状态的标记和颜色
 markers = {'有伟大教练': 'o', '无伟大教练': 's'}
@@ -458,7 +458,7 @@ for status in df_comparison['Coach_Status'].unique():
 
 plt.xlabel('NOC', fontsize=14)
 plt.ylabel('Predicted Golds', fontsize=14)
-plt.title('Comparison on gold numbers (with/without great coach)', fontsize=16)
+plt.title('Comparison on gold numbers', fontsize=16)
 plt.xticks(rotation=45, fontsize=12)
 plt.yticks(fontsize=12)
 plt.legend(fontsize=12)
